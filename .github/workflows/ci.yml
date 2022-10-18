@@ -67,6 +67,18 @@ jobs:
             "7_4_32-cli-alpine3_15",
             "7_4_32-fpm-alpine3_15",
             "7_4_32-nginx-alpine3_15",
+            "7_3_33-cli-bullseye",
+            "7_3_33-fpm-bullseye",
+            "7_3_33-nginx-bullseye",
+            "7_3_33-cli-buster",
+            "7_3_33-fpm-buster",
+            "7_3_33-nginx-buster",
+            "7_3_33-cli-alpine3_16",
+            "7_3_33-fpm-alpine3_16",
+            "7_3_33-nginx-alpine3_16",
+            "7_3_33-cli-alpine3_15",
+            "7_3_33-fpm-alpine3_15",
+            "7_3_33-nginx-alpine3_15",
           ]
     env:
       ENABLE_DOCKERHUB: ${{ (secrets.DOCKERHUB_USERNAME && secrets.DOCKERHUB_TOKEN) && 'true' || 'false' }}
